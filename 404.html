@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Van喵的小窝</title>
-    </head>
-
-    <script>
-        const domain = "van.xn--28ja.com";
-        const src = window.location.href;
-        const prtc = src.substring(0, src.indexOf(':'));
-        const target = src.substring(src.indexOf('/', src.indexOf(':') + 3));
-        window.location.href = prtc + "://" + domain + target;
-        location.href = prtc + "://" + domain + target;
-    </script>
-
-    <body></body>
+<head>
+    <meta charset="utf-8">
+    <title>Van喵的小窝</title>
+</head>
+<script>
+    const domain = 'van.xn--28ja.com';
+    const src = window.location.href;
+    const prtc = src.substring(0, src.indexOf(':'));
+    const target = src.substring(src.indexOf('/', src.indexOf(':') + 3));
+    window.location.href = prtc + '://' + domain + target;
+    location.href = prtc + '://' + domain + target;
+</script>
+<body></body>
 </html>
