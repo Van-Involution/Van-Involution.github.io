@@ -6,12 +6,10 @@
     <title>Van喵的小窝</title>
 </head>
 <script>
-    const domain = 'van.xn--28ja.com';
-    const src = window.location.href;
-    const prtc = src.substring(0, src.indexOf(':'));
-    const target = src.substring(src.indexOf('/', src.indexOf(':') + 3));
-    window.location.href = prtc + '://' + domain + target;
-    location.href = prtc + '://' + domain + target;
+    const DOMAIN = 'van.xn--28ja.com';
+    const SRC = window.location.href;
+    const PATTERN = /:\/\/([^\/]*)/
+    window.location.href = SRC.replace(PATTERN.exec(SRC)[1], DOMAIN);
 </script>
 <body></body>
 </html>
